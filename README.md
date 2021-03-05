@@ -31,9 +31,9 @@ This repo was just revamped to suit an Anime-centric community. All original cre
 
 All other credits mentioned on top of scripts
 
-Should any be missing kindly let us know at [InfinityJE](https://t.me/infinityje) or simply submit a pull request on the readme.
+Should any be missing kindly let us know at [FyonaSupport](https://t.me/FyonaSupport) or simply submit a pull request on the readme.
 
-## Daisy X the telegram Bot Project
+## Fyona the telegram Bot Project
 The Main Branch (Basic features only)
 
 DaisyX v1.0(core)
