@@ -1,6 +1,4 @@
-#    Copyright (C) 2020-2021 by @InukaAsith
-#    This programme is a part of DaisyX TG bot project
-#
+
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -56,13 +54,13 @@ def _onUnMuteRequest(client, cb):
                 except UserNotParticipant:
                     client.answer_callback_query(
                         cb.id,
-                        text=f"❗ අපේ @{channel} channel එකට Join වෙලා 'UnMute Me' button එක ආපහු ඔබන්න.",
+                        text=f"❗ Please Join Our @{channel} & Click on 'UnMute Me' button .",
                         show_alert=True,
                     )
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="❗ ඔයාව වෙන හේතුවක් නිසා Admin ල mute කරලයි ඉන්නෙ.",
+                    text="❗ You have been muted by the admin for another reason.",
                     show_alert=True,
                 )
         else:
@@ -78,7 +76,7 @@ def _onUnMuteRequest(client, cb):
             else:
                 client.answer_callback_query(
                     cb.id,
-                    text="❗ අවවාදයයි: ඔයාට කතාකරන්න පුලුවන්කම තියෙද්දි button එක click කරන්න එපා.",
+                    text="❗ Warning: Do not click the button when you can talk.",
                     show_alert=True,
                 )
 
@@ -100,7 +98,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "ආයුබෝවන් {} 🙏 \n \n **ඔයා අපේ @{} Channel එකට තාම Join වෙලා නෑ** 😭 \n කරුණාකරල ඒකට Join වෙලා පහල තියන **UNMUTE ME** Button එක touch කරන්න. \n \n **[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
+                        "𝗛𝗘𝗟𝗟𝗢 {}  \n \n **𝐘𝐎𝐔 𝐒𝐓𝐈𝐋𝐋 𝐃𝐈𝐃'𝐓 𝐒𝐔𝐁𝐒𝐂𝐑𝐈𝐁𝐄𝐃 𝐎𝐔𝐑 𝐂𝐇𝐀𝐍𝐍𝐄𝐋 ♥️  @{} 𝐒𝐎, 𝐘𝐎𝐔 𝐇𝐀𝐕𝐄 𝐁𝐄𝐄𝐍 𝐌𝐔𝐓𝐄𝐃 😑..** \n 𝐏𝐋𝐄𝐀𝐒𝐄 𝐉𝐎𝐈𝐍 & 𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 [ 𝐔𝐍𝐌𝐔𝐓𝐄 𝐌𝐄 ] 𝐁𝐔𝐓𝐓𝐎𝐍 😁😁... \n \n **[⚜ OUR CHANNEL ⚜](https://t.me/{})**".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,
@@ -191,8 +189,8 @@ __help__ = """
 *ForceSubscribe:*
 
 *Channel Manageer Inbuilt*
-✪ ඔයාගෙ ගෲප් එකේ මෙම්බර්ස්ල Channel එකක් හෝ කිහිපයක් Subscribe කරනකන් Message දාන එක නවත්තන්න මට පුලූවන්.
-✪ සාමාජිකයන් ඔබේ Channel  එකට සම්බන්ධ නොවූයේ නම් මම ඔවුන්ව නිශ්ශබ්ද කර channel එකට සම්බන්ධ වන ලෙස පවසන්න සහ බොත්තමක් එබීමෙන් ඔවුන්ව නිශ්ශබ්ද කරන්න මට පුලුවන්.
+✪ I can stop texting members of your group until they subscribe to one or more channel.
+✪ If members are not connected to your channel I can mute them and tell them to join the channel and I can mute them at the push of a button.
 
 *Setup*
 1) First of all add me in the group as admin with ban users permission and in the channel as admin.
@@ -205,8 +203,6 @@ Note: Only creator of the group can setup me and i will not allow force subscrib
 ✪ /ForceSubscribe clear - To unmute all members who muted by me.
 
 Note: /FSub is an alias of /ForceSubscribe
-
-💭 Only on Sinhala 🇱🇰 yet
  
 """
 __mod_name__ = "📢 Force Subscribe 💭"
