@@ -72,36 +72,35 @@ I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managi
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="👩‍💻 INFO 👩‍💻", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="🕵️‍♀️ Help & Commands 🕵️‍♀️", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/daisyXBot?startgroup=true"
+            text="⚜ nvite me in your group ⚜", url="t.me/Fyona_Bot?startgroup=true"
         ),
     ],
 ]
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [🤖](https://telegra.ph/file/473cc17913393959e0667.jpg)
-✪ /start: Starts me! You've probably already used this.
-✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
-✪ /settings: 
-   ◔ in PM: will send you your settings for all supported modules.
-   ◔ in a Group: will redirect you to pm, with all that chat's settings.
+*Hey there!:* [👸](https://telegra.ph/file/28f00f2aac0c888cf2713.jpg)
+-> I am an group management bot, here to help you get around and keep the order in your groups!
+-> I have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords.
+✪ Main Commands: 
+   ◔ /start: To start the bot
+   ◔ /help: to give this message.
 """.format(
     dispatcher.bot.first_name,
-    "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
+    "" if not ALLOW_EXCL else "\nAll commands can either be triggered with / or !.\n",
 )
 
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Inuka](t.me/InukaASiTH),[Jason](t.me/imjanindu),"""
+Support them  [Oka Smilee](t.me/Okay_Smile)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -360,11 +359,11 @@ def DaisyX_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by Infinity_Bots.* "
-            f"\n\n 🔥 Join [Infinity_Bots](https://t.me/Infinity_Bots) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
-            f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/473cc17913393959e0667.jpg)"
-            f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
+            text=f"*Hello Sir!  The name's {dispatcher.bot.first_name} 👸 \n\n  I'm a next generational group management bot developed by my owner..* "
+            f"\n\n- Join [FyonaSupport](https://t.me/FyonaSupport) For help related to {dispatcher.bot.first_name} "
+            f"\n\n- I have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
+            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/28f00f2aac0c888cf2713.jpg)"
+            f"\n\n✪ For Knowig More About Me click The Below Buttons",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -418,9 +417,7 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
-            text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [Daisy](https://github.com/inukaasith/daisy) + [Naruto](https://github.com/imjanindu/narutorobot)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was written by InukaASiTH and Imjanindu"
+            text=f"*{dispatcher.bot.first_name} Is tcreated with love in india for the best performance ❤.*"
             f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -477,12 +474,11 @@ def DaisyX_about_callback(update, context):
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
             f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by Infinity_Bots team spending many sleepless nights.. So, Respect it."
             f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
             f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
             f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
             f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of DaisyXBot we are not resposible for anything."
+            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of Fyona_Bot we are not resposible for anything."
             f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
             f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
             parse_mode=ParseMode.HTML,
