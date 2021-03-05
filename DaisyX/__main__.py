@@ -63,9 +63,9 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [𝓓𝓪𝓲𝓼𝔂 𝓧](https://telegra.ph/file/473cc17913393959e0667.jpg)
+Hello Sir!, The name's [𝒇𝒚𝒐𝒏𝒂](https://telegra.ph/file/28f00f2aac0c888cf2713.jpg)
 
-I am an 𝐴𝑛𝑖𝑚𝑒 Themed Group Managing Bot and I will help in managing your group
+Whatever i am it's because of you , was created by my [dev](t.me/Okay_Smilee) in INDIA with love ♥️...
 
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -100,7 +100,7 @@ HELP_STRINGS = f"""
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
-Support them  [Oka Smilee](t.me/Okay_Smile)"""
+Support them  [Oka Smilee](t.me/Okay_Smilee)"""
 
 IMPORTED = {}
 MIGRATEABLE = []
