@@ -673,7 +673,7 @@ def fed_ban(update: Update, context: CallbackContext):
         )
         if not x:
             message.reply_text(
-                "Failed to ban from the federation! If this problem continues, contact @OnePunchSupport."
+                "Failed to ban from the federation! If this problem continues, contact @FyonaSupport."
             )
             return
 
