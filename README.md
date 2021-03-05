@@ -3,13 +3,12 @@
 ## Everything will be changed in the release
 
 
-# “ Hey there 👋 I'm Daisy „
+# “ Hey there 👋 I'm Fyona „
 ## AI based Advanced telegram Group Management Bot Suit For All Your Needs ❤️
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/inukaasith/Daisy-x.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/okreend/ok_fyo.git)
 
-## https://daisyproject.studio
-## Avaiilable on Telegram as [@DaisyXBot](https://t.me/daisyxbot)
+## Avaiilable on Telegram as [@Fyona_Bot](https://t.me/Fyona_bot)
 
 
 
