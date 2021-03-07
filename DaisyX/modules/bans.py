@@ -66,7 +66,7 @@ def ban(update: Update, context: CallbackContext) -> str:
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
         if user_id == OWNER_ID:
-            message.reply_text("Trying to put me against a God level disaster huh?")
+            message.reply_text("Trying to put me against my respected god huh?")
             return log_message
         elif user_id in DEV_USERS:
             message.reply_text("I can't act against our own.")
@@ -78,19 +78,19 @@ def ban(update: Update, context: CallbackContext) -> str:
             return log_message
         elif user_id in DEMONS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Demon disaster."
+                "Bring an order from Fyona association to fight a Demon disaster."
             )
             return log_message
         elif user_id in TIGERS:
             message.reply_text(
-                "Bring an order from Heroes association to fight a Tiger disaster."
+                "Bring an order from Fyona association to fight a Tiger disaster."
             )
             return log_message
         elif user_id in WOLVES:
             message.reply_text("Wolf abilities make them ban immune!")
             return log_message
         else:
-            message.reply_text("This user has immunity and cannot be banned.")
+            message.reply_text("This user is admin in my database so, cannot be banned.")
             return log_message
 
     log = (
@@ -106,8 +106,8 @@ def ban(update: Update, context: CallbackContext) -> str:
         chat.kick_member(user_id)
         # bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
         reply = (
-            f"<code>❕</code><b>Ban Event</b>\n"
-            f"<code> </code><b>•  User:</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
+            f"<code>⍟</code><b> Successfully Banned •• | </b>\n"
+            f"<code> </code><b>⍟  User :</b> {mention_html(member.user.id, html.escape(member.user.first_name))}"
         )
         if reason:
             reply += f"\n<code> </code><b>•  Reason:</b> \n{html.escape(reason)}"
