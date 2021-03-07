@@ -221,7 +221,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "👩‍💻Hey! I'm alive.\n⚙️All systems online and functioning normally!!\n<b>⏱ Alive time:</b> <code>{}</code>\n✨ Thanks for adding me! ✨".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
