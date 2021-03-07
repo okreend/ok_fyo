@@ -131,7 +131,7 @@ def warn(
             f"<code> </code><b>𖣔  Count:</b> {num_warns}/{limit}"
         )
         if reason:
-            reply += f"\n<code> </code><b>🤦🏻  Reason:</b> {html.escape(reason)}"
+            reply += f"\n\n<code> </code><b>🤦🏻  Reason:</b> {html.escape(reason)}"
 
         log_reason = (
             f"<b>{html.escape(chat.title)}:</b>\n"
