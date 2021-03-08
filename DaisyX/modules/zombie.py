@@ -63,8 +63,8 @@ async def zombies(event):
                 del_u += 1
                 await sleep(1)
         if del_u > 0:
-            del_status = f"Found **{del_u}** Zombies In This Group.\
-            \nClean Them By Using - `/zombies clean`"
+            del_status = f"👩‍💻I Caught **{del_u}** Zombies In This Group.\
+            \n • Clean Them By Using - `/zombies clean`"
         await find_zombies.edit(del_status)
         return
 
@@ -79,10 +79,10 @@ async def zombies(event):
         return
 
     if not admin and not creator:
-        await event.respond("I Am Not An Admin Here!")
+        await event.respond("I Am Not An Admin Here, promote me Plox...!")
         return
 
-    cleaning_zombies = await event.respond("Cleaning Zombies...")
+    cleaning_zombies = await event.respond("⚜ Cleaning Zombies...")
     del_u = 0
     del_a = 0
 
@@ -93,7 +93,7 @@ async def zombies(event):
                     EditBannedRequest(event.chat_id, user.id, BANNED_RIGHTS)
                 )
             except ChatAdminRequiredError:
-                await cleaning_zombies.edit("I Don't Have Ban Rights In This Group.")
+                await cleaning_zombies.edit("I Don't Have Ban Rights In This Group, tell admin to give me rights first.")
                 return
             except UserAdminInvalidError:
                 del_u -= 1
@@ -106,6 +106,6 @@ async def zombies(event):
 
     if del_a > 0:
         del_status = f"Cleaned `{del_u}` Zombies \
-        \n`{del_a}` Zombie Admin Accounts Are Not Removed!"
+        \n`{del_a}` Zombie Admin Accounts Are Not Removed, Might be they are here as admin demote them 1st !"
 
     await cleaning_zombies.edit(del_status)
