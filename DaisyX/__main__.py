@@ -442,7 +442,7 @@ def DaisyX_about_callback(update, context):
         )
     elif query.data == "aboutmanu_spamprot":
         query.message.edit_text(
-            text="* ｢ Anti-Spam Settings 」*"
+            text="* ｢ 👩‍💻 Anti-Spam Settings 」*"
             "\n- /antispam <on/off/yes/no>: Change antispam security settings in the group, or return your current settings(when no arguments)."
             "\n_This helps protect you and your groups by removing spam flooders as quickly as possible._"
             "\n\n- /setflood <int/'no'/'off'>: enables or disables flood control"
@@ -506,7 +506,7 @@ def get_help(update, context):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"👩‍💻Catch me in PM to get help of {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -522,12 +522,12 @@ def get_help(update, context):
             )
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "Baby! Pm me for getting help 😉.",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="⚜ Click For Help ⚜",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ],
@@ -707,7 +707,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="⚙ Settings ⚙",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -717,7 +717,7 @@ def get_settings(update: Update, context: CallbackContext):
                 ),
             )
         else:
-            text = "Click here to check your settings."
+            text = "👩‍💻 Click here to check your settings."
 
     else:
         send_settings(chat.id, user.id, True)
