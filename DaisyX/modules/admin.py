@@ -40,7 +40,7 @@ def promote(update: Update, context: CallbackContext) -> str:
         not (promoter.can_promote_members or promoter.status == "creator")
         and not user.id in DRAGONS
     ):
-        message.reply_text("You don't have the necessary rights to do that!")
+        message.reply_text("You don't have the necessary rights to do that! - ask admin to give you necessary rights  after that do /admincache")
         return
 
     user_id = extract_user(message, args)
@@ -57,11 +57,11 @@ def promote(update: Update, context: CallbackContext) -> str:
         return
 
     if user_member.status == "administrator" or user_member.status == "creator":
-        message.reply_text("How am I meant to promote someone that's already an admin?")
+        message.reply_text("Hehehe ! This person is already admin in my database why are you buffling me?🤦‍♀️")
         return
 
     if user_id == bot.id:
-        message.reply_text("I can't promote myself! Get an admin to do it for me.")
+        message.reply_text("I can't promote myself! Get an admin to do it for me.🤦‍♀️ btw why you wanted to demote me ?")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!
@@ -89,7 +89,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"Sucessfully promoted <b>{user_member.user.first_name or user_id}</b>!",
+        f"⚜ Sucessfully promoted <b>{user_member.user.mention or user_id}</b>!",
         parse_mode=ParseMode.HTML,
     )
 
@@ -157,7 +157,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"Sucessfully demoted <b>{user_member.user.first_name or user_id}</b>!",
+            f"👩‍💻Sucessfully demoted Retard <b>{user_member.user.mention or user_id}</b>!",
             parse_mode=ParseMode.HTML,
         )
 
@@ -185,7 +185,7 @@ def refresh_admin(update, _):
     except KeyError:
         pass
 
-    update.effective_message.reply_text("Admins cache refreshed!")
+    update.effective_message.reply_text("Successfully Refreshed Admins cache!🥁")
 
 
 @run_async
@@ -220,7 +220,7 @@ def set_title(update: Update, context: CallbackContext):
 
     if not user_member.status == "administrator":
         message.reply_text(
-            "Can't set title for non-admins!\nPromote them first to set custom title!"
+            "Hurrrr How can i set title for non-admins!\nPromote them first to set custom title! 🤓 "
         )
         return
 
