@@ -89,7 +89,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     bot.sendMessage(
         chat.id,
-        f"⚜ Sucessfully promoted <b>{user_member.user.mention or user_id}</b>!",
+        f"Promoted <b>{user_member.user.mention or user_id}</b>!",
         parse_mode=ParseMode.HTML,
     )
 
@@ -157,7 +157,7 @@ def demote(update: Update, context: CallbackContext) -> str:
 
         bot.sendMessage(
             chat.id,
-            f"👩‍💻Sucessfully demoted Retard <b>{user_member.user.mention or user_id}</b>!",
+            f"Demoted Retard <b>{user_member.user.mention or user_id}</b>!",
             parse_mode=ParseMode.HTML,
         )
 
@@ -220,7 +220,7 @@ def set_title(update: Update, context: CallbackContext):
 
     if not user_member.status == "administrator":
         message.reply_text(
-            "Hurrrr How can i set title for non-admins!\nPromote them first to set custom title! 🤓 "
+            "Hurrrr How can i set title for non-admins!\nPromote them first to set custom title! 🤓"
         )
         return
 
@@ -399,13 +399,13 @@ def adminlist(update, context):
         # if user.username:
         #    name = escape_markdown("@" + user.username)
         if status == "creator":
-            text += "\n 👑 Creator:"
+            text += "\n ⚜️ 𝗖𝗥𝗘𝗔𝗧𝗢𝗥 :"
             text += "\n<code> • </code>{}\n".format(name)
 
             if custom_title:
                 text += f"<code> ┗━ {html.escape(custom_title)}</code>\n"
 
-    text += "\n🔱 Admins:"
+    text += "\n 🕵️‍♀️ 𝗔𝗗𝗠𝗜𝗡𝗦 :"
 
     custom_admin_list = {}
     normal_admin_list = []
