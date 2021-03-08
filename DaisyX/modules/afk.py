@@ -65,6 +65,8 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} is finally here!",
                 "Welcome back! {}",
                 "Where is {}?\nIn the chat!",
+                "Our Hero {} is in the chat!",
+                "{} buy a teddy bear for me!",
             ]
             chosen_option = random.choice(options)
             update.effective_message.reply_text(chosen_option.format(firstname))
