@@ -102,7 +102,7 @@ async def zombies(event):
             del_u += 1
 
     if del_u > 0:
-        del_status = f"Cleaned `{del_u}` Zombies"
+        del_status = f"Sucessfully Cleaned `{del_u}` Zombies"
 
     if del_a > 0:
         del_status = f"Cleaned `{del_u}` Zombies \
