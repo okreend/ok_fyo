@@ -79,7 +79,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="⚜ nvite me in your group ⚜", url="t.me/Fyona_Bot?startgroup=true"
+            text="⚜ Invite me in your group ⚜", url="t.me/Fyona_Bot?startgroup=true"
         ),
     ],
 ]
